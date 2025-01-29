@@ -76,7 +76,7 @@ namespace BIMoQ
                 .WhereElementIsNotElementType()
                 .ToElements();
 
-            List<string> elementData = new List<string>();
+            ElementListView.Items.Clear();
             double totalVolume = 0;
             int count = 0;
 
@@ -99,18 +99,28 @@ namespace BIMoQ
                         );
                         totalVolume += volume;
                     }
-                    elementData.Add($"Element ID: {element.Id.IntegerValue}, Volume: {volume} m³");
+
+                    ElementListView.Items.Add(new
+                    {
+                        ElementId = element.Id.IntegerValue,
+                        Volume = volume.ToString("F2")
+                    });
                 }
             }
 
-            string report = $"Selected Type: {selectedType}\n" +
-                            $"Count: {count}\n" +
-                            $"Total Volume: {totalVolume} m³\n\n" +
-                            "Individual Elements:\n" +
-                            string.Join("\n", elementData);
-
-            TaskDialog.Show("Element Properties Report", report);
+            SummaryBlock.Text = $"Selected Type: {selectedType}\n" +
+                                $"Count: {count}\n" +
+                                $"Total Volume: {totalVolume:F2} m³";
         }
+
+        private void Restart_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryComboBox.SelectedIndex = -1;
+            ElementTypeComboBox.Items.Clear();
+            ElementListView.Items.Clear();
+            SummaryBlock.Text = string.Empty;
+        }
+
 
         private void OK_Click(object sender, RoutedEventArgs e)
         {
