@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35431.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIMoQ", "BIMoQ.csproj", "{FFA64118-7632-47E1-90C0-2CFEE55B369C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFA64118-7632-47E1-90C0-2CFEE55B369C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFA64118-7632-47E1-90C0-2CFEE55B369C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFA64118-7632-47E1-90C0-2CFEE55B369C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFA64118-7632-47E1-90C0-2CFEE55B369C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {160CAE9F-FA96-44E2-BEBD-CFD906D52286}
+	EndGlobalSection
+EndGlobal

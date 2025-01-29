@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "BIMoQ": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Program Files\\Autodesk\\Revit 2025",
+      "remoteDebugEnabled": false
+    }
+  }
+}
