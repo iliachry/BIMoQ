@@ -116,7 +116,11 @@ namespace BIMoQ
         private void Restart_Click(object sender, RoutedEventArgs e)
         {
             CategoryComboBox.SelectedIndex = -1;
+            CategoryComboBox.Text = "Select Category";
+
             ElementTypeComboBox.Items.Clear();
+            ElementTypeComboBox.Text = "Select Element Type";
+
             ElementListView.Items.Clear();
             SummaryBlock.Text = string.Empty;
         }
