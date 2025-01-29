@@ -120,13 +120,5 @@ namespace BIMoQ
             ElementListView.Items.Clear();
             SummaryBlock.Text = string.Empty;
         }
-
-
-        private void OK_Click(object sender, RoutedEventArgs e)
-        {
-            // Clear selections and reset for next selection
-            CategoryComboBox.SelectedIndex = -1;
-            ElementTypeComboBox.Items.Clear();
-        }
     }
 }
